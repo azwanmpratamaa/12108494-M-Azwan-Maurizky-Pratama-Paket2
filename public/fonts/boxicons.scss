@@ -1,0 +1,29 @@
+$boxicons-font-path: 'boxicons';
+$boxicons-font-size-base: 16px;
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+       url('../fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+       url('../fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+/* Import Boxicons */
+@import '../node_modules/boxicons/css/boxicons';
+
+/* Override font */
+.bx {
+  font-family: 'Poppins', sans-serif; /* Gunakan font Poppins untuk ikon Boxicons */
+  vertical-align: middle;
+  font-size: 1.15rem;
+  line-height: 1;
+}
